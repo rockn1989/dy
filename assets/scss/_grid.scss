@@ -1,0 +1,49 @@
+.uk-grid {
+  @media (min-width: $mob-xs) {
+    margin-left: -#{$gutter/2};
+  }
+
+  @media (min-width: $desk-w) {
+    margin-left: -#{$gutter};
+  }
+
+  & > * {
+    padding-left: #{$gutter/2};
+
+    @media (min-width: $desk-w) {
+      padding-left: $gutter;
+    }
+  }
+
+  &.uk-grid-collapse {
+    margin-left: 0;
+    & > * {
+      padding-left: 0;
+    }
+  }
+}
+
+.uk-container {
+  margin: 0 auto;
+  padding: 0 $gutter/2;
+  max-width: $containerWidth;
+  box-sizing: border-box;
+  @media (min-width: $tablet-w) {
+    padding: 0 $gutter;
+  }
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header,
+.footer {
+  flex-grow: 0;
+}
+
+.main {
+  flex-grow: 1;
+}

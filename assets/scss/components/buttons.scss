@@ -1,0 +1,17 @@
+.btn {
+  padding: 12px 24px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+  background-color: $lightBlue;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $blue;
+  }
+}

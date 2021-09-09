@@ -1,0 +1,80 @@
+* + h1,
+* + h2 {
+  margin-top: 30px;
+}
+
+h1,
+.title-h1,
+h2,
+.title-h2,
+h3,
+.title-h3 {
+  margin-top: 0;
+  font-family: $mainFont;
+}
+
+h1,
+.title-h1 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  @media (min-width: $mob-xs) {
+    font-size: calc(40px + (86 - 40) * ((100vw - #{$mob-xs}) / (1200 - 320)));
+
+    line-height: calc(48px + (82 - 48) * ((100vw - #{$mob-xs}) / (1200 - 320)));
+  }
+
+  @media (min-width: $desk-w) {
+    font-size: 86px;
+    line-height: 82px;
+  }
+}
+
+h2,
+.title-h2 {
+  margin-bottom: $gutter/2;
+  font-weight: 700;
+  @media (min-width: $mob-xs) {
+    font-size: calc(24px + (36 - 24) * ((100vw - #{$mob-xs}) / (1200 - 320)));
+
+    line-height: calc(28px + (44 - 28) * ((100vw - #{$mob-xs}) / (1200 - 320)));
+  }
+
+  @media (min-width: $desk-w) {
+    margin-bottom: $gutter;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+h3,
+.title-h3 {
+  margin-bottom: 20px;
+
+  @media (min-width: $mob-xs) {
+    font-size: calc(24px + (30 - 24) * ((100vw - #{$mob-xs}) / (1200 - 320)));
+
+    line-height: calc(28px + (36 - 28) * ((100vw - #{$mob-xs}) / (1200 - 320)));
+  }
+
+  @media (min-width: $desk-w) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+a {
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+svg {
+  color: $black;
+  transition: color 0.3s ease;
+  &:hover {
+    color: $blue;
+  }
+}

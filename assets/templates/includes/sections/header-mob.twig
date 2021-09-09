@@ -1,0 +1,55 @@
+<!-- begin header-mob -->
+<div class="header-mob">
+	<div class="uk-container">
+		<div class="header-mob__inner">
+			<a href="/" class="mobile-logo">
+				<img src="img/logo.svg" width="201" height="35" alt="DY" loading="lazy">
+			</a>
+
+			<ul class="mobile-menu">
+				<li>
+					<a href="tel:+79855565127">
+						{{mixins.icon('20px', '20px', 'phone')}}
+					</a>
+				</li>
+				<li>
+					<a href="#" class="toggle-dropdown-menu" uk-toggle="target: .mobile-dropdown-menu; animation: uk-animation-fade" role="button">
+						{{mixins.icon('20px', '20px', 'menu')}}
+						{{mixins.icon('20px', '20px', 'close')}}
+					</a>
+				</li>
+			</ul>
+
+			<div class="mobile-dropdown-menu" hidden>
+				<div class="mobile-search-form-wrapper">
+					<form action="" class="search-form">
+						<input type="text" placeholder="ПОИСК">
+						<button class="btn" type="submit">Искать</button>
+					</form>
+				</div>
+				<ul class="mobile-nav">
+					<li>
+						<a href="#">О компании</a>
+					</li>
+					<li>
+						<a href="#">Каталог</a>
+					</li>
+					<li>
+						<a href="#">Дистрибьютор</a>
+					</li>
+					<li>
+						<a href="#">Гарантия и сервис</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+
+				<a href="mailto:jwk2@dy.co.kr">
+					{{mixins.icon('20px', '20px', 'mail')}}
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end header-mob -->

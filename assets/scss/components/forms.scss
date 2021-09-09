@@ -1,0 +1,31 @@
+.mobile-search-form-wrapper {
+  margin-bottom: $gutter * 1.5;
+  padding: $gutter 0;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+}
+
+.search-form {
+  position: relative;
+
+  input[type="text"] {
+    padding: 0 110px 0 35px;
+    height: 51px;
+    background: url("../img/icon-svg/search.svg") 0 center no-repeat;
+    background-size: 20px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  ::placeholder {
+    font-weight: 700;
+    color: $black;
+  }
+
+  .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

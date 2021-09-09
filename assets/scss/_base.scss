@@ -1,0 +1,14 @@
+html,
+body {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-family: $mainFont;
+  font-weight: 400;
+  color: $black;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
