@@ -66,17 +66,18 @@ h2,
 
 h3,
 .title-h3 {
-  margin-bottom: 20px;
-
+  margin-bottom: $gutter/2;
+  font-weight: 500;
   @media (min-width: $mob-xs) {
-    font-size: calc(24px + (30 - 24) * ((100vw - #{$mob-xs}) / (1200 - 320)));
+    font-size: calc(24px + (32 - 24) * ((100vw - #{$mob-xs}) / (1200 - 320)));
 
-    line-height: calc(28px + (36 - 28) * ((100vw - #{$mob-xs}) / (1200 - 320)));
+    line-height: calc(22px + (30 - 22) * ((100vw - #{$mob-xs}) / (1200 - 320)));
   }
 
   @media (min-width: $desk-w) {
-    font-size: 24px;
-    line-height: 28px;
+    margin-bottom: $gutter;
+    font-size: 32px;
+    line-height: 30px;
   }
 }
 
@@ -90,25 +91,29 @@ a {
   }
 
   &.link-arrow-right {
-    position: relative;
-    padding-right: 15px;
     display: inline-block;
-    &:after {
-      content: "";
-      position: absolute;
-      top: 7px;
-      right: 0;
-
-      border-top: 3px solid transparent;
-      border-bottom: 3px solid transparent;
-      border-left: 5px solid $blue;
-      border-right: transparent;
-      transition: transform 0.3s ease;
+    span {
+      position: relative;
+      padding-right: 15px;
+      display: inline-block;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        right: 0;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 5px solid $blue;
+        border-right: transparent;
+        transition: transform 0.3s ease;
+      }
     }
 
     &:hover {
-      &:after {
-        transform: translateX(4px);
+      span {
+        &:after {
+          transform: translateX(4px);
+        }
       }
     }
   }
