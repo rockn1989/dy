@@ -2,5 +2,12 @@
 {% set title="Главная" %}
 
 {% block content %}
-	<div class="container">Hello</div>
+	<div class="uk-container">
+		<div class="main-page-title">
+			<h1 class="title-large uk-text-center">DY INNOVATE Corporation</h1>
+		</div>
+	</div>
+
+	{% include "../includes/sections/hero-slider.twig" %}
+	{% include "../includes/sections/company-short-info.twig" %}
 {% endblock %}
