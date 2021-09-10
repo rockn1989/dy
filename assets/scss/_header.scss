@@ -200,8 +200,9 @@
 .mobile-dropdown-menu {
   position: absolute;
   top: 100%;
-  padding-bottom: 40px;
-  width: 100%;
+  padding: 0 $gutter/2 $gutter;
+  left: -#{$gutter/2};
+  right: -#{$gutter/2};
   text-align: center;
   background-color: #ffffff;
   z-index: 999;
