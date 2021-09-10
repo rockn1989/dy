@@ -1,0 +1,7 @@
+.seo-section {
+  padding: $gutter 0;
+
+  @media (min-width: $tablet-w) {
+    padding: $gutter * 2 0;
+  }
+}

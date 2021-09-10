@@ -1,6 +1,11 @@
 {% extends "../layouts/default.twig" %}
 {% set title="Главная" %}
 
+{% set seoData={
+  title: 'Дистрибьюторы',
+  desc: 'Манипулятор - автомобиль с краноманипуляторной установкой (КМУ). Такая машина может поднять тяжелый груз на собственную платформу, перевезти, а затем выгрузить его.'
+} %}
+
 {% block content %}
 	<div class="uk-container">
 		<div class="main-page-title">
@@ -10,4 +15,5 @@
 
 	{% include "../includes/sections/hero-slider.twig" %}
 	{% include "../includes/sections/company-short-info.twig" %}
+	{% include "../includes/sections/seo-section.twig" with {'info': seoData} %}
 {% endblock %}
