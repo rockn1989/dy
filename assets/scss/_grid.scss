@@ -51,3 +51,8 @@
 picture {
   display: block;
 }
+
+.section-decor {
+  position: relative;
+  background: linear-gradient(to bottom, #ffffff 325px, $bgGray 325px);
+}
