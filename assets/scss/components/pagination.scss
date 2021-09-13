@@ -1,0 +1,35 @@
+.uk-pagination {
+  margin: 0;
+  padding: $gutter/2 0;
+  border-bottom: 1px solid $gray;
+  @media (min-width: $tablet-w) {
+    padding: $gutter 0;
+  }
+
+  a {
+    color: $blue;
+  }
+
+  a,
+  span {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  li {
+    margin: 0 10px;
+    &.next {
+      a {
+        padding-right: 0;
+        font-weight: 400;
+        span {
+          font-weight: 400;
+          &:after {
+            top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
