@@ -26,11 +26,11 @@
       &:after {
         content: "";
         position: absolute;
-        top: 7px;
+        top: 9px;
         right: 0;
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid transparent;
-        border-left: 5px solid $black;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 4px solid $black;
         border-right: transparent;
         transition: transform 0.3s ease;
       }
