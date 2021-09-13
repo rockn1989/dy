@@ -1,0 +1,13 @@
+{% extends "../layouts/main.twig" %}
+{% set title="Главная" %}
+{% set bread=['Главная', 'Каталог техники'] %}
+{% set seoData={
+  title: 'Заголовок под сео',
+  desc: 'Манипулятор - автомобиль с краноманипуляторной установкой (КМУ). Такая машина может поднять тяжелый груз на собственную платформу, перевезти, а затем выгрузить его.'
+} %}
+
+
+{% block content %}
+	{% include "../includes/sections/catalog-section.twig" %}
+	{% include "../includes/sections/seo-section.twig" with {'info': seoData} %}
+{% endblock %}

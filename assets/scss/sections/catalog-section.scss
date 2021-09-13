@@ -1,0 +1,18 @@
+.catalog-section {
+}
+
+.catalog {
+  &__item {
+    height: calc(100% - #{$gutter/2});
+    @media (min-width: $tablet-w) {
+      height: calc(100% - #{$gutter});
+    }
+
+    &--last-child {
+      height: 100%;
+      .product-card {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
