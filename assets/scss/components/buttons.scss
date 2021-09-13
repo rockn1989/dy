@@ -4,6 +4,7 @@
   font-size: 18px;
   line-height: 28px;
   color: #ffffff;
+  font-family: $mainFont;
   text-align: center;
   background-color: $lightBlue;
   border: none;
@@ -14,5 +15,10 @@
   &:hover {
     color: #ffffff;
     background-color: $blue;
+  }
+
+  &--bg-white {
+    color: $black;
+    background-color: #ffffff;
   }
 }

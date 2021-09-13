@@ -1,3 +1,43 @@
+.form-search-desk-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  background-color: #ffffff;
+  z-index: 60;
+  transform: translateY(-14px);
+  &.active {
+    display: block;
+  }
+
+  .icon-close {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    &:hover {
+      svg {
+        stroke: $blue;
+      }
+    }
+  }
+
+  .search-form {
+    input[type="text"] {
+      padding-right: 135px;
+    }
+
+    .btn {
+      right: 35px;
+      font-size: 16px;
+      line-height: 15px;
+      font-weight: 500;
+    }
+  }
+}
+
 .mobile-search-form-wrapper {
   margin-bottom: $gutter * 1.5;
   padding: $gutter 0;
@@ -27,5 +67,6 @@
     position: absolute;
     top: 0;
     right: 0;
+    height: 51px;
   }
 }

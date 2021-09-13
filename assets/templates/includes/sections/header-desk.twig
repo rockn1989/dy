@@ -39,10 +39,20 @@
 
 			<div class="toolbar">
 				<div class="toolbar__search">
-					<a href="">
+					<a href="#" class="js__toggle-search-desk" role="button">
 						{{mixins.icon('20px', '20px', 'search')}}
 						<span>Поиск</span>
 					</a>
+
+					<div class="form-search-desk-wrapper">
+						<form action="" method="GET" class="search-form">
+							<input type="text" placeholder="ПОИСК">
+							<button class="btn btn--bg-white" type="submit">НАЙТИ</button>
+						</form>
+						<i class="icon-close" role="button">
+							{{mixins.icon('20px', '20px', 'close')}}
+						</i>
+					</div>
 				</div>
 				<div class="toolbar__tel">
 					<a href="tel:+79855565127">
