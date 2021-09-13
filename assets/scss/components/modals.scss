@@ -1,0 +1,72 @@
+.modal-default {
+  background-color: #ffffff;
+  @media (max-width: $mob-s) {
+    padding: 15px 0;
+  }
+  .uk-modal-dialog {
+    width: 100%;
+
+    .uk-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+      @media (min-width: $mob-s) {
+        top: 0;
+        right: 0;
+      }
+      svg {
+        width: 36px;
+        height: 36px;
+        color: $gray;
+        @media (min-width: $tablet-w) {
+          width: 48px;
+          height: 48px;
+        }
+      }
+
+      &:hover {
+        svg {
+          color: $blue;
+        }
+      }
+    }
+  }
+  .uk-modal-header,
+  .uk-modal-body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 583px;
+  }
+  .uk-modal-header {
+    padding: 0;
+    padding-top: $gutter * 1.5;
+    border: none;
+    @media (min-width: $mob-s) {
+      padding-top: 0;
+    }
+    .title-h1 {
+      margin-bottom: $gutter/2;
+      @media (min-width: $tablet-w) {
+        margin-bottom: $gutter;
+      }
+    }
+  }
+  .uk-modal-body {
+    padding: 0;
+
+    .btn {
+      width: 100%;
+
+      @media (min-width: $mob-s) {
+        width: auto;
+      }
+    }
+  }
+
+  .politics {
+    margin-top: $gutter;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

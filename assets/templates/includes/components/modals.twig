@@ -1,0 +1,49 @@
+<div id="callback-modal" class="modal-default callback-modal" uk-modal>
+
+	<div class="uk-modal-dialog">
+		<div class="uk-container">
+			<div class="uk-modal-header">
+				<div class="title-h1">Оставить заявку</div>
+				<button class="uk-modal-close" type="button" uk-close></button>
+			</div>
+			<div class="uk-modal-body">
+				<form action="" class="default-form">
+					<div class="form-group">
+						<label for="cb-name">Ваше имя
+							<sup>*</sup>
+						</label>
+						<input id="cb-name" type="text" placeholder="Иванов Иван" required>
+					</div>
+					<div class="form-group">
+						<label for="cb-email">Email</label>
+						<input id="cb-email" type="text" placeholder="example@mail.com">
+					</div>
+					<div class="form-group">
+						<label for="cb-tel">Телефон
+							<sup>*</sup>
+						</label>
+						<input id="cb-tel" type="text" class="js__input-mask" placeholder="+7 (    )" required>
+					</div>
+
+					<div class="form-group">
+						<label for="cb-comments">Комментарий
+						</label>
+						<textarea name="cb-comments"></textarea>
+					</div>
+
+					<div class="form-group">
+						<img src="img/media/captcha.png" alt="">
+					</div>
+
+					<button type="submit" class="btn btn--md">Отправить</button>
+				</form>
+
+				<div class="politics">
+					Нажимая на кнопку отправить, я даю согласие на обработку
+					<a href="/politics/">Персональных данных</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
