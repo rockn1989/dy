@@ -4,6 +4,14 @@
   @media (min-width: $tablet-w) {
     margin-bottom: $gutter * 1.75;
   }
+
+  &__inner {
+    padding-top: $gutter;
+    border-top: 1px solid $gray;
+    @media (min-width: $tablet-w) {
+      padding-top: $gutter * 3;
+    }
+  }
 }
 
 .product-item {

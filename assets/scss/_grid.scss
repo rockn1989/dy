@@ -56,3 +56,7 @@ picture {
   position: relative;
   background: linear-gradient(to bottom, #ffffff 325px, $bgGray 325px);
 }
+
+.bg-gray {
+  background-color: $bgGray;
+}

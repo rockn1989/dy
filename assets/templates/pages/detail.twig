@@ -1,0 +1,28 @@
+{% extends "../layouts/main.twig" %}
+{% set title="Детальная" %}
+{% set bread=['Главная', 'Каталог техники', 'Краны-манипуляторы (КМУ) DongYang'] %}
+
+{% set seoData={
+  title: 'Дистрибьюторы',
+  desc: 'Манипулятор - автомобиль с краноманипуляторной установкой (КМУ). Такая машина может поднять тяжелый груз на собственную платформу, перевезти, а затем выгрузить его.'
+} %}
+
+{% set seoData2={
+  class: ' bg-gray',
+  title: 'Гарантия и сервис',
+  desc: 'Собственные и партнерские технические центры занимаются обслуживанием коммерческой техники на протяжении многих лет и заслуживают доверие многих крупных компаний. Несомненным достоинством является индивидуальный подход к клиентам.'
+} %}
+
+{% set seoData3={
+  title: 'Заголовок под сео',
+  desc: 'Манипулятор - автомобиль с краноманипуляторной установкой (КМУ). Такая машина может поднять тяжелый груз на собственную платформу, перевезти, а затем выгрузить его.'
+} %}
+
+{% block content %}
+	{% include "../includes/sections/detail-card-section.twig" %}
+	{% include "../includes/sections/callback-section.twig" %}
+	{% include "../includes/sections/seo-section.twig" with {'info': seoData} %}
+  {% include "../includes/sections/distributor-section.twig" %}
+	{% include "../includes/sections/seo-section.twig" with {'info': seoData2} %}
+	{% include "../includes/sections/seo-section.twig" with {'info': seoData3} %}
+{% endblock %}

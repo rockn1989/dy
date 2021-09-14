@@ -21,11 +21,6 @@
     padding: 12px 54px;
   }
 
-  &--bg-white {
-    color: $black;
-    background-color: #ffffff;
-  }
-
   &--icon-arrow-right {
     position: relative;
     padding-right: 45px;
@@ -39,6 +34,20 @@
       border-left: 5px solid #ffffff;
       border-right: transparent;
       transition: transform 0.3s ease;
+    }
+  }
+
+  &--bg-white {
+    color: $lightBlue;
+    background-color: #ffffff;
+    &:after {
+      border-left-color: $lightBlue;
+    }
+
+    &:hover {
+      &:after {
+        border-left-color: #ffffff;
+      }
     }
   }
 }

@@ -6,6 +6,8 @@
 <path d="M12 9L14.5981 13.5H9.40192L12 9Z" fill="currentColor"/>
 </symbol><symbol id="close" viewBox="2 2 20 20">
 <path d="M3 3L12 12M21 21L12 12M12 12L20.5263 3.47368L3 21" stroke="#1A1919" stroke-width="2"/>
+</symbol><symbol id="doc" viewBox="8 4 32 40">
+<path d="M30.8282 4H8V44H40V13.1718L30.8282 4ZM38 42H10V6H30L38 14V42ZM16 28H26V26H16V28ZM16 22H32V20H16V22Z" fill="#1B5CA8"/>
 </symbol><symbol id="mail" viewBox="2 4 20 16">
 <path d="M2 4V20H22V4H2ZM20 6V7.2321L12 11.8511L4 7.2321V6H20ZM4 18V9.5417L12 14.16L20 9.5415V18H4Z" fill="currentColor"/>
 </symbol><symbol id="menu" viewBox="0 7 24 10">

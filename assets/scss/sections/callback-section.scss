@@ -1,0 +1,13 @@
+.callback-section {
+  padding: $gutter 0;
+  color: #ffffff;
+  background-color: $lightBlue;
+
+  @media (min-width: $tablet-w) {
+    padding: $gutter * 2 0;
+  }
+
+  .title-h2 {
+    color: inherit;
+  }
+}
