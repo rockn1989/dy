@@ -47,6 +47,43 @@ $(function () {
       }
     });
 
+
+  /**
+   * Youtube
+   */
+
+  if ($(".video-card").length) {
+
+    $.each($(".video-card"), function (idx, el) {
+      const $youtube = $(el),
+        $preview = $youtube.find('.video-card__preview'),
+        source =
+          "https://img.youtube.com/vi/" + $preview.data("embed") + "/0.jpg",
+        image = new Image();
+
+      image.src = source;
+      image.addEventListener("load", function () {
+        $preview.append(image);
+      });
+
+      $youtube.on("click", function (e) {
+        e.preventDefault();
+        const iframe = $("<iframe>", {
+          frameborder: 0,
+          allowfullscreen: "",
+          autoplay: true,
+          src:
+            "https://www.youtube.com/embed/" +
+            $preview.data("embed") +
+            "?rel=0&showinfo=0&autoplay=1",
+        });
+        $youtube.find(".video-card__play").fadeOut("350");
+        $youtube.find("img").fadeOut("350");
+        $preview.append(iframe);
+      });
+    });
+  }
+
   /**
    * Svg4everybody
    */

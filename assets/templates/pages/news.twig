@@ -1,0 +1,117 @@
+{% extends "../layouts/main.twig" %}
+{% set title="Новости" %}
+{% set bread=['Главная', 'Новости'] %}
+
+{% block content %}
+	<!-- begin news-section -->
+	<section class="news-section">
+		<div class="uk-container">
+			<h1>Новости</h1>
+
+			<div class="news-list">
+				<div class="news-list__row">
+
+
+					<div class="news-list__col">
+						<article class="post post--main">
+							<header class="post__header">
+								<div class="post__date">14 сентября 2021</div>
+								<div class="post__img">
+									<img src="img/media/news-img-1.png" alt="">
+								</div>
+							</header>
+							<section class="post__body">
+								<a href="" class="post__title">Приглашение на выставку СТТ 2021</a>
+								<div class="post__text">
+									Уважаемые партнеры! Приглашаем Вас посетить стенд компании на Международной специализированной выставке bauma CTT 2021, которая состоится с 25 мая по 28 мая 2021 года в МВЦ Крокус Экспо.
+								</div>
+							</section>
+						</article>
+					</div>
+
+
+					<div class="news-list__col">
+
+						<article class="post">
+							<header class="post__header">
+								<div class="post__date">14 сентября 2021</div>
+							</header>
+							<section class="post__body">
+								<a href="" class="post__title">
+									Компания DY Corp. нарастила производственные мощности по выпуску крано-манипуляторных установок DY для российского рынка на 30%
+								</a>
+							</section>
+						</article>
+						<article class="post">
+							<section class="post__body">
+								<div class="post__date">13 Сентября 2019</div>
+								<a href="" class="post__title">
+									Программа льготного лизинга на КМУ DY (DongYang) на шасси ISUZU
+								</a>
+							</section>
+						</article>
+						<article class="post">
+							<section class="post__body">
+								<div class="post__date">15 Июля 2019</div>
+								<a href="" class="post__title">
+									DY Corporation нарастила производство КМУ для России
+								</a>
+							</section>
+						</article>
+
+					</div>
+
+				</div>
+
+				<div class="news-list__row">
+					<div class="news-list__col">
+						<article class="post">
+							<section class="post__body">
+								<div class="post__date">15 Июля 2019</div>
+								<a href="" class="post__title">
+									DY Corporation нарастила производство КМУ для России
+								</a>
+							</section>
+						</article>
+					</div>
+					<div class="news-list__col">
+						<article class="post">
+							<section class="post__body">
+								<div class="post__date">15 Июля 2019</div>
+								<a href="" class="post__title">
+									DY Corporation нарастила производство КМУ для России
+								</a>
+							</section>
+						</article>
+					</div>
+				</div>
+
+				<div class="news-list__row">
+					<div class="news-list__col">
+						<article class="post">
+							<section class="post__body">
+								<div class="post__date">15 Июля 2019</div>
+								<a href="" class="post__title">
+									DY Corporation нарастила производство КМУ для России
+								</a>
+							</section>
+						</article>
+					</div>
+					<div class="news-list__col">
+						<article class="post">
+							<section class="post__body">
+								<div class="post__date">15 Июля 2019</div>
+								<a href="" class="post__title">
+									DY Corporation нарастила производство КМУ для России
+								</a>
+							</section>
+						</article>
+					</div>
+				</div>
+			</div>
+
+			{% include "../includes/components/pagination.twig" %}
+		</div>
+	</section>
+	<!-- end news-section -->
+{% endblock %}
