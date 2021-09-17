@@ -1,9 +1,8 @@
 .uk-pagination {
   margin: 0;
-  padding: $gutter/2 0;
-  border-bottom: 1px solid $gray;
+  padding: $gutter 0 0;
   @media (min-width: $tablet-w) {
-    padding: $gutter 0;
+    padding: $gutter * 2 0 0;
   }
 
   a {

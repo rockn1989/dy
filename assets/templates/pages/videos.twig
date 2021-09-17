@@ -3,89 +3,90 @@
 {% set bread=['Главная', 'О компании', 'Видео'] %}
 
 {% block content %}
-
-	<!-- begin videos-section -->
-	<section class="videos-section">
+	<section class="content">
 		<div class="uk-container">
 			<h1>Видео</h1>
+			<!-- begin videos-section -->
+			<section class="videos-section">
 
-			<div class="videos-list">
-				<div class="videos-list__row">
-					<article class="video-card">
-						<header class="video-card__header">
-							<div class="video-card__preview" data-embed="bLYBCkvCN4g"></div>
-							<div class="video-card__play">
-								{{mixins.icon('64px', '64px', 'play')}}
-							</div>
-						</header>
+				<div class="videos-list">
+					<div class="videos-list__row">
+						<article class="video-card">
+							<header class="video-card__header">
+								<div class="video-card__preview" data-embed="bLYBCkvCN4g"></div>
+								<div class="video-card__play">
+									{{mixins.icon('64px', '64px', 'play')}}
+								</div>
+							</header>
 
-						<section class="video-card__body">
-							<div class="video-card__time">00:14:34</div>
-							<div class="video-card__title">Видеопрезентация КМУ DY (DongYang) на выставке BAUMA СТТ RUSSIA 2019</div>
-							<div class="video-card__text">
-								На крупнейшей выставке строительной техники BAUMA СТТ RUSSIA компания представила популярные модели для российского рынка
-							</div>
-						</section>
-					</article>
+							<section class="video-card__body">
+								<div class="video-card__time">00:14:34</div>
+								<div class="video-card__title">Видеопрезентация КМУ DY (DongYang) на выставке BAUMA СТТ RUSSIA 2019</div>
+								<div class="video-card__text">
+									На крупнейшей выставке строительной техники BAUMA СТТ RUSSIA компания представила популярные модели для российского рынка
+								</div>
+							</section>
+						</article>
 
-					<article class="video-card">
-						<header class="video-card__header">
-							<div class="video-card__preview" data-embed="E4-z2oE65ks"></div>
-							<div class="video-card__play">
-								{{mixins.icon('64px', '64px', 'play')}}
-							</div>
-						</header>
+						<article class="video-card">
+							<header class="video-card__header">
+								<div class="video-card__preview" data-embed="E4-z2oE65ks"></div>
+								<div class="video-card__play">
+									{{mixins.icon('64px', '64px', 'play')}}
+								</div>
+							</header>
 
-						<section class="video-card__body">
-							<div class="video-card__time">00:14:34</div>
-							<div class="video-card__title">Компания DY на Олимпийских Играх 2018 в Южной Корее</div>
-							<div class="video-card__text">
-								Корпорация DY предоставила оборудование для автоматической мойки автомобильной техники во время проведения зимних Олимпийских игр 2018 в Южной Корее.
-							</div>
-						</section>
-					</article>
+							<section class="video-card__body">
+								<div class="video-card__time">00:14:34</div>
+								<div class="video-card__title">Компания DY на Олимпийских Играх 2018 в Южной Корее</div>
+								<div class="video-card__text">
+									Корпорация DY предоставила оборудование для автоматической мойки автомобильной техники во время проведения зимних Олимпийских игр 2018 в Южной Корее.
+								</div>
+							</section>
+						</article>
+					</div>
+
+					<div class="videos-list__row">
+						<article class="video-card">
+							<header class="video-card__header">
+								<div class="video-card__preview" data-embed="yeeqh5c0u-U"></div>
+								<div class="video-card__play">
+									{{mixins.icon('64px', '64px', 'play')}}
+								</div>
+							</header>
+
+							<section class="video-card__body">
+								<div class="video-card__time">00:14:34</div>
+								<div class="video-card__title">Бетононасосы DongYang</div>
+								<div class="video-card__text">
+									Подразделение DY Corporation - Concrete Pumps было основано в 1992 году. За прошедшие годы DY удалось завоевать репутацию надежного поставщика высококачественных бетононасосов, как на внутрикорейском рынке
+								</div>
+							</section>
+						</article>
+
+						<article class="video-card">
+							<header class="video-card__header">
+								<div class="video-card__preview" data-embed="EzxUksxVN_Q"></div>
+								<div class="video-card__play">
+									{{mixins.icon('64px', '64px', 'play')}}
+								</div>
+							</header>
+
+							<section class="video-card__body">
+								<div class="video-card__time">00:14:34</div>
+								<div class="video-card__title">Корпорация DY</div>
+								<div class="video-card__text">
+									Корпорация DY Corporation - крупная Южнокорейская компания, реализующая ежегодно более 2000 единиц кранов-манипуляторов. Компания ТЕХИНКОМ - официальный дистрибьютор техники DY на территории Российской Федерации.
+								</div>
+							</section>
+						</article>
+					</div>
 				</div>
 
-				<div class="videos-list__row">
-					<article class="video-card">
-						<header class="video-card__header">
-							<div class="video-card__preview" data-embed="yeeqh5c0u-U"></div>
-							<div class="video-card__play">
-								{{mixins.icon('64px', '64px', 'play')}}
-							</div>
-						</header>
+				{% include "../includes/components/pagination.twig" %}
 
-						<section class="video-card__body">
-							<div class="video-card__time">00:14:34</div>
-							<div class="video-card__title">Бетононасосы DongYang</div>
-							<div class="video-card__text">
-								Подразделение DY Corporation - Concrete Pumps было основано в 1992 году. За прошедшие годы DY удалось завоевать репутацию надежного поставщика высококачественных бетононасосов, как на внутрикорейском рынке
-							</div>
-						</section>
-					</article>
-
-					<article class="video-card">
-						<header class="video-card__header">
-							<div class="video-card__preview" data-embed="EzxUksxVN_Q"></div>
-							<div class="video-card__play">
-								{{mixins.icon('64px', '64px', 'play')}}
-							</div>
-						</header>
-
-						<section class="video-card__body">
-							<div class="video-card__time">00:14:34</div>
-							<div class="video-card__title">Корпорация DY</div>
-							<div class="video-card__text">
-								Корпорация DY Corporation - крупная Южнокорейская компания, реализующая ежегодно более 2000 единиц кранов-манипуляторов. Компания ТЕХИНКОМ - официальный дистрибьютор техники DY на территории Российской Федерации.
-							</div>
-						</section>
-					</article>
-				</div>
-			</div>
-
-			{% include "../includes/components/pagination.twig" %}
+			</section>
+			<!-- end videos-section -->
 		</div>
 	</section>
-	<!-- end videos-section -->
-
 {% endblock %}

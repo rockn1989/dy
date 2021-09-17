@@ -1,4 +1,18 @@
 .catalog-section {
+  padding-bottom: $gutter/2;
+  border-bottom: 1px solid $gray;
+
+  @media (min-width: $tablet-w) {
+    padding-bottom: $gutter;
+  }
+
+  .uk-pagination {
+    padding-top: $gutter/2;
+
+    @media (min-width: $tablet-w) {
+      padding-top: $gutter;
+    }
+  }
 }
 
 .catalog {

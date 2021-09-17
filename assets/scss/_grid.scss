@@ -48,6 +48,14 @@
   flex-grow: 1;
 }
 
+section.content {
+  padding-bottom: $gutter;
+
+  @media (min-width: $tablet-w) {
+    padding-bottom: $gutter * 2;
+  }
+}
+
 picture {
   display: block;
 }
