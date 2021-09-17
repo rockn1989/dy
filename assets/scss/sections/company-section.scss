@@ -1,0 +1,144 @@
+.company-section {
+  padding: $gutter 0 0;
+  border-top: 1px solid $gray;
+
+  @media (min-width: $tablet-w) {
+    padding: $gutter * 2 0 0;
+  }
+}
+
+.company {
+  &__desc {
+    margin-bottom: $gutter;
+    padding-bottom: $gutter;
+    border-bottom: 1px solid $gray;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter * 2;
+      padding-bottom: $gutter * 2;
+    }
+
+    .preview-text {
+      margin-top: $gutter;
+
+      @media (min-width: $tablet-w) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__promo-text {
+    margin-bottom: $gutter;
+    font-size: 18px;
+    line-height: 28px;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter * 2;
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+
+  &__add-info {
+    margin-bottom: 30px;
+    .uk-grid {
+      & > div {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.company-list {
+  margin-bottom: $gutter;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 2;
+  }
+  &__item-wrapper {
+    border: 1px solid $gray;
+    border-top: none;
+    &:first-child {
+      border-top: 1px solid $gray;
+    }
+    @media (min-width: $tablet-w) {
+      border-left: none;
+      border-top: 1px solid $gray;
+      &:first-child {
+        border-left: 1px solid $gray;
+      }
+    }
+  }
+
+  &__item {
+    padding: $gutter/2;
+
+    @media (min-width: $tablet-w) {
+      padding: $gutter $gutter/2;
+    }
+  }
+
+  &__item-logo {
+    margin-bottom: $gutter/2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 75px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__item-table {
+    font-size: 18px;
+    line-height: 28px;
+    tr {
+      td {
+        vertical-align: top;
+        &:first-child {
+          width: 33%;
+        }
+        &:nth-child(even) {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.manufac-list {
+  .uk-grid-margin {
+    margin-top: 40px;
+  }
+  &__item-title {
+    margin-bottom: $gutter/2;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter;
+    }
+  }
+
+  &__item-img {
+    margin-bottom: $gutter/2;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgGray;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter;
+    }
+  }
+
+  &__item-desc {
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

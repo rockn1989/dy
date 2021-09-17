@@ -68,3 +68,7 @@ picture {
 .bg-gray {
   background-color: $bgGray;
 }
+
+.remove-border {
+  border: none !important;
+}

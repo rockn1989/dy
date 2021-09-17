@@ -1,0 +1,225 @@
+{% extends "../layouts/main.twig" %}
+{% set title="О компании" %}
+{% set bread=['Главная', 'О компании'] %}
+{% set seoData={
+  title: 'Дистрибьюторы',
+  desc: 'Манипулятор - автомобиль с краноманипуляторной установкой (КМУ). Такая машина может поднять тяжелый груз на собственную платформу, перевезти, а затем выгрузить его.'
+} %}
+
+{% block content %}
+	<section class="content">
+		<div class="uk-container">
+			<h1>О компании</h1>
+
+			<!-- begin company-section -->
+			<section class="company-section">
+				<div class="company__desc">
+					<div class="uk-grid">
+						<div class="uk-width-1-2@m">
+							<div class="title-h3">
+								DY INNOVATE — крупнейшая компания, получившая признание на мировом рынке благодаря превосходному качеству и инновационным техническим решениям. Ранее продукция компании поставлялась под брендом DongYang Mechatronics.
+							</div>
+
+							<div class="doc-item">
+								<div class="doc-item__img">
+									{{mixins.icon('32px', '40px', 'doc')}}
+								</div>
+								<div class="doc-item__text">
+									<a href="" class="doc-item__link" download>Скачать буклет</a>
+									<div class="doc-item__doc-size">PDF 3490 KB</div>
+								</div>
+							</div>
+						</div>
+						<div class="uk-width-1-2@m">
+							<div class="preview-text">
+								Со времени основания компании в 1978г., компания DY расширяла новые производственные площади в различных регионах, тем самым создавая фундамент для корпоративного роста и развития. Не останавливаясь на достигнутом, компания DY открыла зарубежные филиалы и корпорации в США, Мексике, Японии, Европе и многих других странах, включая производственные базы в Китае и Индии, благодаря чему получила статус общепризнанного лидера в промышленном производстве.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<ul class="advantage-list uk-child-width-1-3@s" uk-grid>
+					<li class="advantage-list__item-wrapper">
+						<div class="advantage-list__item">
+							<div class="advantage-list__title">>1000</div>
+							<div class="advantage-list__text">Сотрудников компании</div>
+						</div>
+					</li>
+
+					<li class="advantage-list__item-wrapper">
+						<div class="advantage-list__item">
+							<div class="advantage-list__title">>14</div>
+							<div class="advantage-list__text">Заводов по производству</div>
+						</div>
+					</li>
+
+					<li class="advantage-list__item-wrapper">
+						<div class="advantage-list__item">
+							<div class="advantage-list__title">>7</div>
+							<div class="advantage-list__text">Офисов продаж</div>
+						</div>
+					</li>
+				</ul>
+
+				<div class="company__promo-text">
+					Холдинг DY group состоит из головной компании DY, завода DY в Иксане, концернов DY Power и DY AUTO. Основным преимуществом компании DY является неизменное стремление к новым достижениям и инновациям, и, как следствие, производство спецтехники высокого качества.
+				</div>
+
+				<ul class="company-list uk-child-width-1-3@m uk-grid-collapse" uk-grid uk-scrollspy="target: .company-list__item; cls: uk-animation-fade; delay: 150">
+					<li class="company-list__item-wrapper">
+						<div class="company-list__item">
+							<div class="company-list__item-logo">
+								<img src="img/media/company-logo-1.png" alt="Dy Power" loading="lazy">
+							</div>
+							<div class="uk-overflow-auto">
+								<table class="company-list__item-table">
+									<tr>
+										<td>Оборот:</td>
+										<td>400 млн долларов США (2019)</td>
+									</tr>
+									<tr>
+										<td>Персонал:</td>
+										<td>390 человек (2017)</td>
+									</tr>
+									<tr>
+										<td>Сфера:</td>
+										<td>Гидравлические системы</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</li>
+
+					<li class="company-list__item-wrapper">
+						<div class="company-list__item">
+							<div class="company-list__item-logo">
+								<img src="img/media/company-logo-2.png" alt="Dy Power" loading="lazy">
+							</div>
+							<div class="uk-overflow-auto">
+								<table class="company-list__item-table">
+									<tr>
+										<td>Оборот:</td>
+										<td>375 млн долларов США (2019)</td>
+									</tr>
+									<tr>
+										<td>Персонал:</td>
+										<td>487 человек (2017)</td>
+									</tr>
+									<tr>
+										<td>Сфера:</td>
+										<td>Автомобилестроение</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</li>
+
+					<li class="company-list__item-wrapper">
+						<div class="company-list__item">
+							<div class="company-list__item-logo">
+								<img src="img/media/company-logo-3.png" alt="Dy Power" loading="lazy">
+							</div>
+							<div class="uk-overflow-auto">
+								<table class="company-list__item-table">
+									<tr>
+										<td>Оборот:</td>
+										<td>100 млн долларов США (2019)</td>
+									</tr>
+									<tr>
+										<td>Персонал:</td>
+										<td>250 человек (2017)</td>
+									</tr>
+									<tr>
+										<td>Сфера:</td>
+										<td>Машиностроение</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<div class="company__add-info">
+					<div class="uk-grid">
+						<div class="uk-width-1-2@m">
+							<div class="uk-panel uk-margin-medium">
+								<img src="img/media/company-img-4.png" alt="" loading="lazy">
+							</div>
+						</div>
+						<div class="uk-width-1-2@m">
+							<div class="title-h3">Завод DY Iksan производит различную спецтехнику и оборудование: бетононасосы, многофункциональные грузовые краны, автоматические мойки автомобилей и электрические гольф-машины.</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="title-h2">Производственная линия</div>
+
+				<ul class="manufac-list uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid uk-scrollspy="target: .manufac-list__item; cls: uk-animation-fade; delay: 150">
+					<li class="manufac-list__item-wrapper">
+						<div class="manufac-list__item">
+							<div class="manufac-list__item-title">Краны</div>
+							<div class="manufac-list__item-img">
+								<img src="img/media/manufac-img-1.png" alt="" loading="lazy">
+							</div>
+							<div class="manufac-list__item-desc">
+								<ul>
+									<li>КМУ</li>
+									<li>КМУ с грайфером</li>
+									<li>Кран для погрузки/разгрузки кирпича</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li class="manufac-list__item-wrapper">
+						<div class="manufac-list__item">
+							<div class="manufac-list__item-title">Автобетононасосы</div>
+							<div class="manufac-list__item-img">
+								<img src="img/media/manufac-img-2.png" alt="" loading="lazy">
+							</div>
+							<div class="manufac-list__item-desc">
+								<ul>
+									<li>25 M ~ 57 M</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li class="manufac-list__item-wrapper">
+						<div class="manufac-list__item">
+							<div class="manufac-list__item-title">Автомойки</div>
+							<div class="manufac-list__item-img">
+								<img src="img/media/manufac-img-3.png" alt="" loading="lazy">
+							</div>
+							<div class="manufac-list__item-desc">
+								<ul>
+									<li>Для легкового автомобиля</li>
+									<li>Для грузовика</li>
+									<li>Для автобуса</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li class="manufac-list__item-wrapper">
+						<div class="manufac-list__item">
+							<div class="manufac-list__item-title">Гольф-Кары</div>
+							<div class="manufac-list__item-img">
+								<img src="img/media/manufac-img-4.png" alt="" loading="lazy">
+							</div>
+							<div class="manufac-list__item-desc">
+								<ul>
+									<li>4~6 пассажиров</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<!-- end company-section -->
+		</div>
+	</section>
+	{% include "../includes/sections/company-short-info.twig" %}
+	{% include "../includes/sections/seo-section.twig" with {'info': seoData} %}
+	{% include "../includes/sections/distributor-section.twig" %}
+{% endblock %}

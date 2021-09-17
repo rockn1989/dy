@@ -1,0 +1,33 @@
+.advantage-list {
+  margin-bottom: $gutter;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 2;
+  }
+
+  &__item-wrapper {
+    @media (min-width: $mob-s) {
+      border-right: 1px solid $gray;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+  &__title {
+    margin-bottom: $gutter/4;
+    color: $blue;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter/2;
+      font-size: 52px;
+      line-height: 62px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
