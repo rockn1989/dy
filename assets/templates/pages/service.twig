@@ -1,0 +1,57 @@
+{% extends "../layouts/main.twig" %}
+{% set title="Гарантия и сервис" %}
+{% set bread=['Главная', 'Гарантия и сервис'] %}
+
+{% block content %}
+  <section class="content">
+    <div class="uk-container">
+      <h1>Гарантия и сервис</h1>
+
+      <!-- begin service-section -->
+      <section class="service-section">
+        <div class="service-section__top">
+          <div class="uk-grid">
+            <div class="uk-width-1-2@m">
+              <div class="service-item">
+                <div class="service-item__img">
+                  {{mixins.icon('120px', '86px', '12')}}
+                </div>
+                <div class="service-item__text">Гарантийный срок на крано-манипуляторные установки DY составляет 12 месяцев или 1000 моточасов со дня передачи КМУ потребителю.</div>
+              </div>
+            </div>
+            <div class="uk-width-1-2@m">
+              <div class="service-item">
+                <div class="service-item__img">
+                  <img src="img/icon-svg/gear.svg" alt="">
+                </div>
+                <div class="service-item__text">
+                  Гарантийный ремонт КМУ осуществляется в рамках гарантийных обязательств завода-производителя.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-section__bottom">
+          <div class="uk-grid">
+            <div class="uk-width-1-2@m">
+              <div class="wrapper">
+                <div class="title-h3">
+                  Потребитель имеет право  на гарантийное обслуживание в течение гарантийного периода при соблюдении следующих обязательных условий:
+                </div>
+              </div>
+            </div>
+            <div class="uk-width-1-2@m">
+              <ol>
+                <li>Выполнения требований «Руководства по эксплуатации» и «Сервисной книжки», в том числе и по применению указанных в руководстве масел, смазочных жидкостей и эксплуатационных материалов.</li>
+                <li>Соблюдения рекомендованной в сервисной книжке периодичности технического обслуживания в аттестованных центрах и наличие в сервисной книжке соответствующих отметок.</li>
+                <li>Использование КМУ по назначению и отсутствия каких-либо конструктивных изменений, внесенных без согласования с заводом-изготовителем.</li>
+                <li>Своевременной постановки приобретенной техники на гарантийный учет в течении 10 дней после получения крана.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section><!-- end service-section -->
+    </div>
+  </section>
+{% endblock %}
