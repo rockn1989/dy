@@ -1,0 +1,15 @@
+.docs-list {
+  border-left: 1px solid $gray;
+  border-top: 1px solid $gray;
+
+  &__item {
+    padding: $gutter/2;
+    border: 1px solid $gray;
+    border-top: none;
+    border-left: none;
+
+    @media (min-width: $tablet-w) {
+      padding: $gutter;
+    }
+  }
+}
