@@ -115,3 +115,20 @@
     margin-top: $gutter/2;
   }
 }
+
+.search-section-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $mob-s) {
+    flex-wrap: nowrap;
+  }
+  .btn {
+    width: 100%;
+    @media (min-width: $mob-s) {
+      margin-top: 0;
+      margin-left: 20px;
+      width: auto;
+    }
+  }
+}

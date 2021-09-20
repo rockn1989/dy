@@ -1,0 +1,40 @@
+{% extends "../layouts/default.twig" %}
+{% set title="Результаты поиска" %}
+
+{% block content %}
+<section class="content">
+  <div class="uk-container">
+    <h1>Результаты поиска</h1>
+
+    <!-- begin search-results-section -->
+    <section class="search-results-section">
+      <div class="search-results__match">
+        По вашему запросу: <span class="search-results__query">Манипулятор</span> найдено <span class="search-results__count">2</span> <span class="blue">совпадения</span>
+      </div>
+
+      <form action="" class="default-form search-section-form">
+        <input type="text" placeholder="Введите новый запрос для нового поиска">
+        <button type="submit" class="btn">Искать</button>
+      </form>
+
+      <div class="search-results__list">
+        <div class="search-results__item">
+          <a href="" class="search-results__item-title title-h3">Получи скидку на КМУ</a>
+          <div class="search-results__item-text">
+            Купите краноманипуляторную установку DY (DongYang) со скидкой . Купите краноманипуляторную установку DY (DongYang) со скидкой . Для этого закажите монтаж ...
+          </div>
+        </div>
+        <div class="search-results__item">
+          <a href="" class="search-results__item-title title-h3">
+            Получи скидку на кран
+          </a>
+          <div class="search-results__item-text">
+            от 6 до 12,5%. Для физических лиц и индивидуальных предпринимателей возможна реализация автомобилей без привлечения лизинговых компаний. Крано-манипуляторные установки DY на шасси ISUZU – максимально выгодное и надежное решение для бизнеса. Ведь в данной технике сочетаются передовые ...
+          </div>
+        </div>
+      </div>
+
+    </section><!-- end search-results-section -->
+  </div>
+</section>
+{% endblock %}

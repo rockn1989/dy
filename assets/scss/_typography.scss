@@ -163,6 +163,10 @@ p {
   }
 }
 
+.blue {
+  color: $blue;
+}
+
 .figure-wrapper {
   padding: $gutter/2;
   display: flex;

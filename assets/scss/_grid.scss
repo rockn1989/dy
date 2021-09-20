@@ -48,7 +48,7 @@
   flex-grow: 1;
 }
 
-section.content {
+.content {
   padding-bottom: $gutter;
 
   @media (min-width: $tablet-w) {
