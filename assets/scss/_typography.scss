@@ -14,6 +14,23 @@ h3,
   color: $blue;
 }
 
+.xl-title {
+  font-weight: 700;
+  color: $blue;
+  @media (min-width: $mob-xs) {
+    font-size: calc(96px + (288 - 96) * ((100vw - #{$mob-xs}) / (1200 - 320)));
+
+    line-height: calc(
+      92px + (276 - 92) * ((100vw - #{$mob-xs}) / (1200 - 320))
+    );
+  }
+
+  @media (min-width: $desk-w) {
+    font-size: 288px;
+    line-height: 276px;
+  }
+}
+
 .title-large {
   margin-bottom: 40px;
   font-weight: 700;

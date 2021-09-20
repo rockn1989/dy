@@ -1,0 +1,39 @@
+.page-not-found {
+  @media (min-width: $desk-w) {
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      display: block;
+      height: 370px;
+      transform: translateY(-50%);
+    }
+
+    &:before {
+      left: 0;
+      width: 300px;
+      background: url("../img/media/truck-1.svg") 0 0 no-repeat;
+    }
+    &:after {
+      right: 0;
+      width: 233px;
+      background: url("../img/media/truck-2.svg") 0 0 no-repeat;
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 780px;
+    text-align: center;
+
+    @media (min-width: $tablet-w) {
+      padding: 120px 0;
+    }
+
+    .preview-text {
+      margin-bottom: $gutter;
+    }
+  }
+}
