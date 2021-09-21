@@ -1,0 +1,28 @@
+#map {
+  width: 100%;
+  height: calc(370px + (540 - 370) * ((100vw - #{$mob-xs}) / (1200 - 320)));
+  @media (min-width: $desk-w) {
+    height: 540px;
+  }
+}
+
+.ballon-content {
+  font-family: $mainFont;
+  .link-arrow-right {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.ballon-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.ballon-body {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 21px;
+}

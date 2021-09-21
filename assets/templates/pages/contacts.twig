@@ -1,0 +1,90 @@
+{% extends "../layouts/main.twig" %}
+{% set title="Контакты" %}
+{% set bread=['Главная', 'Контакты'] %}
+
+{% block content %}
+	<section class="content">
+		<div class="uk-container">
+			<h1>Контакты</h1>
+
+			<ul class="tabs" uk-switcher>
+				<li class="uk-active">
+					<a href="">Производитель</a>
+				</li>
+				<li>
+					<a href="">ООО «ВОЛГОИНВЕСТ»</a>
+				</li>
+				<li>
+					<a href="">ООО «ТЕХИНКОМ-СПЕЦТЕХ»</a>
+				</li>
+				<li>
+					<a href="">ООО ТФК «ФЕНИКС»</a>
+				</li>
+			</ul>
+
+			<ul class="uk-switcher">
+				<li>
+					<ul class="contact-list uk-child-width-1-2@m" uk-grid>
+						<li class="contact-list__item-wrapper">
+							<div class="contact-list__item">
+								<div class="contact-user">
+									<div class="contact-user__avatar">
+										<img src="img/media/avatar-1.png" width="96" height="96" alt="" loading="lazy">
+									</div>
+									<div class="contact-user__desc">
+										<div class="contact-user__staff">Представитель DY INNOVATE в РФ, СНГ</div>
+										<div class="contact-user__text">
+											<p>Контактное лицо: Константин Ким</p>
+											<p>Адрес: 36, Namdongseo-ro 362 beon-gil, Namdong-gu, Incheon, Korea</p>
+											<p>Телефон:
+												<a href="tel:82328104178">+82-32-810-4178</a>
+											</p>
+											<p>Моб.телефон:
+												<a href="tel:+79855565127">+7 (985) 556-51-27</a>
+											</p>
+											<p>Email:
+												<a href="mailto:jwk2@dy.co.kr">jwk2@dy.co.kr</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="contact-list__item-wrapper">
+							<div class="contact-list__item">
+								<div class="contact-user">
+									<div class="contact-user__avatar">
+										<img src="img/media/avatar-2.png" width="96" height="96" alt="" loading="lazy">
+									</div>
+									<div class="contact-user__desc">
+										<div class="contact-user__staff">Запчасти КМУ DY</div>
+										<div class="contact-user__text">
+											<p>Контактное лицо: Дмитрий Барков</p>
+											<p>Адрес: г. Подольск, ул. Б.Серпуховская, д.55 (Территория автоколонны 1127)</p>
+											<p>Телефон:
+												<a href="tel:+74959743747">+7(495)974-37-47</a>
+												доб.2288</p>
+											<p>Моб.телефон:
+												<a href="tel:+79257251203">+7 (925) 725-12-03</a>
+											</p>
+											<p>Email:
+												<a href="mailto:7251203@mail.ru">7251203@mail.ru</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<div id="map" class="map"></div>
+				</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4
+				</li>
+			</ul>
+		</div>
+	</section>
+{% endblock %}

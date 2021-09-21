@@ -1,0 +1,45 @@
+.contact-user {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @media (min-width: $mob-s) {
+    flex-wrap: nowrap;
+  }
+
+  &__avatar {
+    margin-bottom: 20px;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    flex-shrink: 0;
+    @media (min-width: $mob-s) {
+      margin-right: $gutter;
+    }
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: 0;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__desc {
+    color: $black;
+  }
+
+  &__staff {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
