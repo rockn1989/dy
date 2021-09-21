@@ -105,6 +105,7 @@
   @media (min-width: $tablet-w) {
     padding: $gutter * 1.5;
   }
+
   &__date {
     margin-bottom: $gutter/2;
     font-size: 16px;
@@ -114,6 +115,26 @@
 
     @media (min-width: $tablet-w) {
       margin-bottom: $gutter/2;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+
+    @media (min-width: $tablet-w) {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+
+  &:hover {
+    .post-short__text {
+      color: $lightBlue;
+
+      a {
+        color: inherit;
+      }
     }
   }
 }

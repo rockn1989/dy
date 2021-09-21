@@ -98,6 +98,20 @@
     line-height: 21px;
     background-color: #ffffff;
     border: 1px solid $gray;
+    transition: border-color 0.3s ease;
+    &::placeholder {
+      color: $gray;
+      transition: color 0.3s ease;
+    }
+
+    &:focus,
+    &:hover {
+      border-color: $blue;
+
+      &::placeholder {
+        color: $black;
+      }
+    }
   }
 
   textarea {
@@ -109,6 +123,19 @@
     border: 1px solid $gray;
     min-height: 114px;
     resize: vertical;
+    &::placeholder {
+      color: $gray;
+      transition: color 0.3s ease;
+    }
+
+    &:focus,
+    &:hover {
+      border-color: $blue;
+
+      &::placeholder {
+        color: $black;
+      }
+    }
   }
 
   .btn {

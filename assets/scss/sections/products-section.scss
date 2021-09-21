@@ -61,6 +61,14 @@
           border-left-color: #ffffff;
         }
       }
+      &:hover {
+        color: #ffffff;
+        span {
+          &:after {
+            border-left-color: #ffffff;
+          }
+        }
+      }
     }
   }
 

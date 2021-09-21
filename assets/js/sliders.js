@@ -10,7 +10,7 @@ $(function () {
       infinite: true,
       dots: true,
       arrows: false,
-      autoplay: false,
+      autoplay: true,
       cssEase: "linear",
       fade: true,
       autoplaySpeed: 3000,
