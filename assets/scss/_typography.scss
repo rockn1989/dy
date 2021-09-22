@@ -224,8 +224,7 @@ ul:not([class]) {
 
 ol:not([class]) {
   @include list-reset;
-  list-style: none;
-  counter-reset: list-item;
+  counter-reset: li;
 
   li {
     position: relative;
@@ -233,7 +232,7 @@ ol:not([class]) {
     padding-left: 35px;
     font-size: 18px;
     line-height: 28px;
-
+    counter-increment: li;
     &:last-child {
       margin-bottom: 0;
     }
@@ -244,7 +243,7 @@ ol:not([class]) {
       line-height: 34px;
     }
     &:before {
-      content: counter(list-item);
+      content: counter(li);
       position: absolute;
       left: 0;
       top: 0;

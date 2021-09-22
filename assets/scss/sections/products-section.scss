@@ -59,12 +59,14 @@
         &:after {
           top: 50%;
           border-left-color: #ffffff;
+          transform: translateY(-50%);
         }
       }
       &:hover {
         color: #ffffff;
         span {
           &:after {
+            transform: translate(4px, -50%);
             border-left-color: #ffffff;
           }
         }

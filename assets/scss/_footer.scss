@@ -93,7 +93,8 @@
     }
     li {
       margin-bottom: 12px;
-
+      display: inline-block;
+      width: 100%;
       &:last-child {
         margin-bottom: 0;
       }

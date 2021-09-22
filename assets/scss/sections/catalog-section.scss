@@ -23,7 +23,9 @@
     }
 
     &--last-child {
-      height: 100%;
+      @media (min-width: $tablet-w) {
+        height: auto;
+      }
       .product-card {
         margin-bottom: 0;
       }
