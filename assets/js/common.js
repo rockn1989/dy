@@ -66,7 +66,7 @@ $(function () {
         $preview.append(image);
       });
 
-      $youtube.on("click", function (e) {
+      $preview.on("click", function (e) {
         e.preventDefault();
         const iframe = $("<iframe>", {
           frameborder: 0,
