@@ -1,0 +1,26 @@
+.soc-list {
+  @include list-reset;
+  display: flex;
+  margin: 20px 0;
+  li {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    display: block;
+
+    &:hover {
+      svg {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  svg {
+    fill: $mediumBlue;
+    transition: fill 0.3s ease;
+  }
+}

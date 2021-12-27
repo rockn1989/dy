@@ -31,7 +31,7 @@
   &__img {
     position: relative;
     margin-bottom: $gutter;
-    height: 52px;
+    // height: 52px;
     @media (min-width: $tablet-w) {
       margin-bottom: $gutter * 1.5;
     }
